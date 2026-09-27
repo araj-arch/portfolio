@@ -58,13 +58,25 @@ export default function Navbar() {
       >
         <a
           href="#top"
-          className="group flex items-center gap-2 font-display text-lg font-semibold tracking-tight"
+          className="group flex items-center gap-3"
           aria-label={`${site.name} — back to top`}
         >
-          <span className="grid h-8 w-8 place-items-center rounded-md border border-border bg-surface font-mono text-xs text-accent transition-colors group-hover:border-accent">
+          <span
+            aria-hidden="true"
+            className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-accent to-accent-strong font-display text-[0.85rem] font-bold tracking-tight text-on-accent transition-transform duration-300 group-hover:-rotate-6"
+            style={{ boxShadow: "0 10px 24px -14px var(--glow)" }}
+          >
             AR
           </span>
-          <span className="hidden sm:inline">{site.name}</span>
+          <span className="hidden flex-col leading-none sm:flex">
+            <span className="font-display text-[0.95rem] font-semibold tracking-tight">
+              {site.name}
+              <span className="text-accent">.</span>
+            </span>
+            <span className="mt-1 font-mono text-[0.6rem] uppercase tracking-[0.22em] text-muted">
+              AI / ML Engineer
+            </span>
+          </span>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">
