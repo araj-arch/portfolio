@@ -19,7 +19,7 @@ export const site = {
     "I build full-stack, AI-powered products — from LLM-integrated platforms to computer-vision systems.",
   description:
     "Portfolio of Anand Raj, an AI/ML engineer and B.Tech (AI & ML) student in Indore, India. Full-stack, AI-powered projects: LLM platforms, computer vision, and applied ML.",
-  url: "https://anandraj.dev",
+  url: "https://portfolio-lovat-phi-96kemyetn4.vercel.app",
   email: "araj49981@gmail.com",
   phone: "+91 83405 03488",
   phoneHref: "+918340503488",
